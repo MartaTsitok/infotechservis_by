@@ -1,0 +1,101 @@
+body {
+    font-family: 'Golos', Regular, 'Manrope', sans-serif; /* Добавляем Manrope к общему стилю */
+    background-color: #f8f9fa; /* Светлый фон */
+}
+
+/* Основные стили навигации */
+.navbar {
+    background-color: #343a40; /* Темный фон для навигации */
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+    color: #ffffff; /* Белый цвет текста */
+}
+
+.nav-link:hover {
+    color: #ffc107; /* Цвет при наведении */
+}
+
+/* Стили для карусели */
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирование текста */
+    color: #ffffff; /* Цвет текста */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 300px; /* Уменьшаем высоту карусели на мобильных */
+    }
+    
+    .carousel-caption h3 {
+        font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка на мобильных */
+    }
+    
+    .nav-link {
+        font-size: 1em; /* Уменьшаем размер шрифта ссылок на мобильных */
+    }
+    
+    .jumbotron {
+        padding: 1.5em; /* Увеличиваем отступы для удобства чтения */
+    }
+    
+    .card {
+        margin-bottom: 1em; /* Добавляем отступ между карточками */
+    }
+}
+
+/* Общие стили для карточек */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Устанавливаем высоту карточки на 100% */
+}
+
+.card-body {
+    flex-grow: 1; /* Позволяет области содержимого занимать оставшееся пространство */
+}
+
+/* Стили для заголовков */
+h1, h4, p {
+    margin-bottom: 1em; /* Отступ снизу для заголовков и параграфов */
+    font-family: 'Manrope', sans-serif; /* Применяем Manrope к заголовкам и параграфам */
+}
+
+h1 {
+    padding-bottom: 1em;
+}
+
+/* Стили для jumbotron */
+.jumbotron {
+    padding: 2em;
+    border-radius: 0;
+}
+
+/* Стили для иконки email */
+.email-icon {
+    display: inline-flex; /* Используем flex для вертикального выравнивания */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    margin-top: -20px; /* Настройте этот параметр для точного выравнивания */
+}
+
+.fa-envelope:hover {
+    color: lightblue; /* Цвет при наведении на иконку email */
+}
